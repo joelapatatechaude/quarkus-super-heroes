@@ -28,6 +28,7 @@ COPY --chown=1001:1001 --from=builder $HOME $HOME
 
 # Expose the http port
 EXPOSE $HTTP_PORT
+RUN chgrp -R root /opt/app-root/src && chmod -R g+w /opt/app-root/src
 
 # Run script uses standard ways to run the application
 CMD npm start
