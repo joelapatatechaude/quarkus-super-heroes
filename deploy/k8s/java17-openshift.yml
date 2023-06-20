@@ -161,7 +161,7 @@ spec:
         type: Source
     - from:
         kind: DockerImage
-        name: quay.io/quarkus-super-heroes/rest-villains:java17-latest-2.13.Final
+        name: quay.io/quarkus-super-heroes/rest-villains:java17-latest-2.13.Final-amd64
       importPolicy: {}
       name: java17-latest
       referencePolicy:
